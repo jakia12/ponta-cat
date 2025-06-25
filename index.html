@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/ponta.png"
+    />
+
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Outfit:wght@100..900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>PONTA CAT</title>
+  </head>
+
+  <body class="bg-[#01a8fc]">
+    <div
+      class="container_site max-w-[100%] relative w-full h-auto min-h-[100vh] overflow-hidden"
+    >
+      <!-- navbar -->
+      <nav
+        class="w-full z-[999] justify-center h-[80px] xl:h-[100px] absolute left-0 top-0 max-w-[100%] flex items-center bg-[#e89b15] border-b-[4px] border-[#000]"
+      >
+        <div
+          class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[100%] justify-between w-full max-w-[100%] xl:max-w-[2100px]"
+        >
+          <div
+            class="left flex relative z-10 justify-center items-center text-[white] text_nav text-[15px] md:text-[30px]"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div class="logo mr-[1rem]">
+              <h2 class="text-[20px] xl:text-[43.13px]">$PONTA</h2>
+            </div>
+          </div>
+          <div
+            class="center absolute left-0 top-0 h-full w-[100%] z-0 justify-center flex items-center"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <ul
+              class="flex items-center absolute opacity-0 xl:opacity-100 xl:relative gap-[1rem] link_none"
+            >
+              <!-- <li class="list-none">
+                <a
+                  href="#about"
+                  class="text-white uppercaseduration-200 ease-in text_nav text-[20px] tracking-[1px]"
+                  >About</a
+                >
+              </li>
+              <li class="list-none">
+                <a
+                  href="#tokenomics"
+                  class="text-white uppercaseduration-200 ease-in text_nav text-[20px] tracking-[1px]"
+                  >Tokenomics</a
+                >
+              </li>
+              <li class="list-none">
+                <a
+                  href="https://dexscreener.com/abstract/0x54204bb9e7ac4ee5c28068ff3098c09580e4ee09"
+                  class="text-white uppercaseduration-200 ease-in text_nav text-[20px] tracking-[1px]"
+                  >Dexscreener</a
+                >
+              </li> -->
+            </ul>
+          </div>
+          <div
+            class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div class="social flex items-center relative gap-[.5rem]">
+              <a
+                href="ttlink"
+                target="_blank"
+                class="media duration-300 relative w-[43px] h-[60px] md:w-[58.66px] md:h-[56.6px] border-[2px] border-black rounded-[10.03px] bg-[#F9DF94] flex justify-center items-center"
+              >
+                <div
+                  class="icon relative h-[85%] w-[85%] border-[1px] border-black rounded-[inherit] flex justify-center items-center"
+                >
+                  <img
+                    src="assets/images/twitter.png"
+                    alt="twitter"
+                    class="w-[50%] h-auto object-contain"
+                  />
+                </div>
+              </a>
+              <a
+                href="tglink"
+                target="_blank"
+                class="media duration-300 relative w-[43px] h-[60px] md:w-[58.66px] md:h-[56.6px] border-[2px] border-black rounded-[10.03px] bg-[#FFD7E2] flex justify-center items-center"
+              >
+                <div
+                  class="icon relative h-[85%] w-[85%] border-[1px] border-black rounded-[inherit] flex justify-center items-center"
+                >
+                  <img
+                    src="assets/images/telegram.png"
+                    alt="telegram"
+                    class="w-[50%] h-auto object-contain"
+                  />
+                </div>
+              </a>
+            </div>
+            <a
+              href="chartlink"
+              target="_blank"
+              class="w-[90px] buy h-[60px] md:w-[145px] uppercase md:h-[63px] text-[black] bg-white rounded-[10px] md:rounded-[16px] text-[10px] xl:text-[18px] flex justify-center items-center btn_hover rock_font hover:scale-110 duration-300 border-[1px] border-[black]"
+            >
+              Chart
+            </a>
+            <div class="menu-button relative">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="menu absolute duration-300 top-[100%] left-[0rem] w-[100%] h-[200px] flex justify-center border-t-[2px] border-[#0471A7] bg-[#18ABF4]"
+        >
+          <ul
+            class="flex items-center relative gap-[2rem] link_none flex-col justify-center"
+          >
+            <li class="list-none">
+              <!-- <a
+                href="index.html#about"
+                class="text-white uppercaseduration-200 ease-in text_nav text-[16px] tracking-[1px]"
+                >About</a
+              > -->
+            </li>
+            <li class="list-none">
+              <!-- <a
+                href="index.html#tokenomics"
+                class="text-white uppercaseduration-200 ease-in text_nav text-[16px] tracking-[1px]"
+                >Tokenomics</a
+              > -->
+            </li>
+            <li class="list-none">
+              <!-- <a
+                href="index.html#roadmap"
+                class="text-white uppercaseduration-200 ease-in text_nav text-[16px] tracking-[1px]"
+                >Roadmap</a
+              > -->
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <section
+        class="hero w-full relative h-[600px] md:h-[800px] xl:h-[1080px] flex justify-center items-center z-[1]"
+        style="
+          background-image: linear-gradient(#ffc7726c, #ffd89e85),
+            url('/assets/images/banner.png');
+
+          background-position: 27% center;
+          background-size: cover;
+        "
+      >
+        <!-- title -->
+        <h2
+          class="title text-white absolute top-[20%] xl:top-[13%] text-[100px] md:text-[160px] xl:text-[278.76px]"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          $PONTA
+        </h2>
+        <!-- <h2
+          class="title text-white absolute top-[40%] xl:top-[43%] text-[100px] md:text-[160px] xl:text-[278.76px]"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          ELEPHANT
+        </h2> -->
+        <!-- star -->
+        <img
+          src="assets/images/star.svg"
+          alt=""
+          class="absolute top-[20%] w-[90%] xl:w-[80%] max-w-[1500px] h-auto object-contain"
+        />
+        <!-- decor -->
+        <img
+          src="assets/images/hero_decor.svg"
+          alt=""
+          class="absolute top-[20%] xl:top-[17%] w-[50px] xl:w-[139.13px] left-[40%] h-auto object-contain z-[1]"
+        />
+        <!-- hero image -->
+        <img
+          src="assets/images/logo.png"
+          alt="hero"
+          class="absolute bottom-0 w-[340px] xl:w-[600px] h-auto object-contain z-[1]"
+        />
+        <!-- hero bg -->
+        <!-- <img
+          src="assets/images/hero_bg.svg"
+          alt="hero"
+          class="absolute bottom-[-4%] w-[400px] xl:w-[798.37px] h-auto object-contain z-[0]"
+        /> -->
+      </section>
+      <!-- lines -->
+      <!-- <div>
+        <img
+          src="/assets/images/grass_01.svg"
+          style="height: 80px; width: 100%; object-fit: contain"
+          alt=""
+        />
+      </div> -->
+      <div
+        class="relative w-full h-[50px] xl:h-auto flex justify-center items-center"
+      >
+        <img
+          src="assets/images/lines_section.svg"
+          alt="hero"
+          class="relative w-full z-[2] h-full xl:h-auto object-cover"
+        />
+      </div>
+
+      <!-- marqee tag -->
+
+      <section>
+        <div class="Marquee">
+          <div class="Marquee-content">
+            <div class="mar_wrapper Marquee-tag">
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- marqee tag -->
+      <!-- rotate image -->
+      <!-- <div
+        class="rotate w-full h-auto absolute left-0 top-[40vw] xl:top-0 z-0 flex justify-center items-center"
+      >
+        <div
+          class="reltive max-w-[2000px] w-full h-auto flex justify-center items-center"
+        ></div>
+      </div> -->
+      <!-- about section -->
+
+      <!-- lines -->
+      <!-- <div
+        class="relative w-full h-[50px] xl:h-auto flex justify-center items-center"
+      >
+        <img
+          src="assets/images/lines_section.svg"
+          alt="hero"
+          class="relative w-full z-[2] h-full xl:h-auto object-cover"
+        />
+      </div> -->
+      <!-- marqee tag -->
+
+      <!-- <section>
+        <div class="Marquee">
+          <div class="Marquee-content">
+            <div class="mar_wrapper Marquee-tag">
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+              <div class="marqee_inside">
+                <img src="/assets/images/logo.png" alt="" style="width: 60px" />
+
+                <div class="mar_wid">
+                  <span class="marq_txt">$PONTA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- marqee tag -->
+      <!-- tokenomics -->
+
+      <!-- lines -->
+      <!-- <div
+        class="relative z-[11] w-full h-[50px] xl:h-auto flex justify-center items-center"
+      >
+        <img
+          src="assets/images/lines_section.svg"
+          alt="hero"
+          class="relative w-full z-[2] h-full xl:h-auto object-cover"
+        />
+      </div> -->
+
+      <!-- roadmap -->
+
+      <!-- lines -->
+      <!-- footer -->
+      <!-- <section
+        class="w-full z-10 h-auto relative items-end flex justify-center"
+        style="padding: 50px 0"
+      >
+        <div class="w-full flex justify-center items-center">
+          <div>
+            <h1
+              class="title text-[50px] md:text-[105.11px] text-white max-[1024px]:my-[50px] mb-[30px]"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="200"
+              style="text-align: center"
+            >
+              JOIN $PONTA
+            </h1>
+            <h4
+              style="
+                text-align: center;
+                color: #fff;
+                font-size: 23px;
+                margin-bottom: 30px;
+              "
+            >
+              Official Email: lunathedoggy25@gmail.com
+            </h4>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 40px;
+              "
+            >
+              <img
+                src="assets/images/banner.png"
+                alt="elephant"
+                class="w-full h-[420px] object-contain hidden lg:block"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                style="border-radius: 15px"
+                data-aos-delay="200"
+              />
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- by -->
+      <div
+        class="by relative uppercase z-10 w-full h-auto max-[1024px]:py-[1rem] xl:h-[88px] flex justify-center bg-[#FFD401]"
+      >
+        <div
+          class="flex justify-center items-center relative h-full w-full max-[1024px]:flex-col max-w-[2000px] gap-[1rem] px-[3rem]"
+        >
+          <p class="relative text-[14px] text-gray-800">
+            ©2025 $PONTA ; All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      <!-- rotate image -->
+      <div class="bottom-0 w-full h-full absolute overflow-hidden">
+        <div
+          class="rotate w-full h-auto absolute left-0 bottom-[-30vw] xl:bottom-[-50vw] min-[2500px]:bottom-[-40vw] z-0 flex justify-center items-center"
+        >
+          <div
+            class="reltive max-w-[2000px] w-full h-auto flex justify-center items-center"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- aos js scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // aos
+      AOS.init({
+        once: true,
+      });
+      // menu navbar
+      const menu = document.querySelector(".menu");
+      const menuBtn = document.querySelector(".menu-button");
+
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        menu.classList.toggle("active");
+      });
+
+      // copy address
+      const copybtns = document.querySelectorAll(".copy_address");
+
+      copybtns.forEach((copybtn) => {
+        copybtn.addEventListener("click", function () {
+          let textCopied = copybtn.querySelector(".value_copied");
+          let intervalId;
+          let addressText = document
+            .querySelector(".value")
+            .getAttribute("data-set");
+          textCopied.innerHTML = "COPIED";
+
+          if (intervalId) {
+            clearInterval(intervalId);
+          }
+
+          intervalId = setInterval(() => {
+            textCopied.innerHTML = "0xB38F3b7Ac44a778b9389FC4a0E8cd578950e868F";
+            clearInterval(intervalId);
+          }, 1000);
+
+          navigator.clipboard.writeText(addressText);
+        });
+      });
+      // change image
+      document.addEventListener("DOMContentLoaded", function () {
+        const aboutImage = document.querySelector("#about .bg_content");
+
+        function checkViewportWidth() {
+          if (window.innerWidth < 1300 && window.innerWidth > 500) {
+            aboutImage.style.display = "none"; // Hide the image
+          } else if (window.innerWidth < 500) {
+            aboutImage.setAttribute("src", "none");
+          } else {
+            aboutImage.setAttribute("src", "./assets/images/bg_about.svg");
+          }
+        }
+        checkViewportWidth();
+        window.addEventListener("resize", checkViewportWidth);
+      });
+    </script>
+  </body>
+</html>
